@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="background"></div>
+		<div id="foreground">
+
+			<div class="container top left">
+				<h3 class="tx" id="title"></h3>
+			</div>
+
+			<div class="container top right">
+				<!-- MENU ¿?-->
+			</div>
+
+			<div class="container bottom mid" id="div_player">
+				<div id="play_button">
+					<i id="play_button_inner" class="fas fa-play fa-3x"></i>
+				</div>
+				<div id="metadata">
+					<h3 id="artist"></h3>
+					<h3 id="album"></h3>
+					<h3 id="track"></h3>
+				</div>
+				<audio id="player" preload="none">
+					<source type="audio/mpeg">
+				</audio>
+
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.5.1/pixi.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/displacement-map-flag.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

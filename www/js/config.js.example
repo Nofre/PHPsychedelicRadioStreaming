@@ -1,0 +1,3 @@
+const TITLE = "PHPsychedelicRadioStreaming";
+const BASE_URL = "http://radio.host.com"
+const NUM_IMAGES = 5;

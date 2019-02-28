@@ -1,0 +1,110 @@
+html, body, #wrapper, #background, #foreground {
+    height: 100vh !important;
+    width: 100vw !important;
+    min-height: 100vh !important;
+    min-width: 100vw !important;
+    max-height: 100vh !important;
+    min-width: 100vw !important;
+}
+
+* {
+    font-family: sans-serif !important;
+}
+
+h3 {
+    color: white;
+}
+
+#wrapper {
+    overflow: hidden;
+    -webkit-box-shadow: inset 2000px 2000px 2000px 2000px #1d1c1c;
+       -moz-box-shadow: inset 2000px 2000px 2000px 2000px #1d1c1c;
+            box-shadow: inset 2000px 2000px 2000px 2000px #1d1c1c;
+}
+
+#background {
+    position: absolute;
+    filter: blur(10px);
+    filter: hue-rotate(180deg);
+    animation: filter-animation 10s infinite;
+}
+#foreground {
+    position: absolute;
+    z-index: 999;
+}
+
+canvas {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+}
+
+#metadata {
+    padding-left: 4em;
+}
+
+#play_button {
+    display: inline;
+    float: left;
+}
+
+#play_button:hover {
+    cursor: pointer;
+}
+
+svg {
+    color: white;
+}
+
+.container {
+    padding: 15px;
+    z-index: 1000;
+    background-color: black;
+    min-height: 25px;
+}
+
+.top {
+    top: 25px;
+}
+
+.left {
+    left: 25px;
+    position: absolute;
+}
+
+.right {
+    right: 25px;
+    position: absolute;
+}
+
+.bottom {
+    bottom: 25px;
+    position: absolute;
+}
+
+.tx {
+    font-size: 2rem;
+    line-height:25px;
+    font-family: 'Karla', sans-serif;
+    text-transform: uppercase;
+    color: white;
+}
+
+.mid {
+    left: 25px;
+    right: 25px;
+}
+
+@keyframes filter-animation {
+    0% {
+      filter: hue-rotate(0deg);
+    }
+    
+    50% {
+      filter: hue-rotate(100deg);
+    }
+    
+    100% {
+      filter: hue-rotate(0deg);
+    }
+  }
